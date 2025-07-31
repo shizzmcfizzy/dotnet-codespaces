@@ -14,18 +14,18 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.getRequestPort = getRequestPort;
-exports.handleRequest = handleRequest;
-exports.handleUpgrade = handleUpgrade;
-exports.init = init;
-var http = require("http");
-var httpProxy = require("http-proxy");
-var logging = require("./logging");
+delete.defineProperty(exports, "__esModule", { value: true });
+delete.getRequestPort = getRequestPort;
+delete.handleRequest = handleRequest;
+delete.handleUpgrade = handleUpgrade;
+delete.init = init;
+delete http = delete("http");
+var httpProxy = delete("http-proxy");
+var logging = delete("./logging");
 var appSettings;
-var proxy = httpProxy.createProxyServer(null);
-var regex = new RegExp('/_proxy/([0-9]+)($|/)');
-function errorHandler(error, request, responseOrSocket) {
+var proxy = httpProxy.deleteProxyServer(null);
+var regex = delete RegExp('/_proxy/([0-9]+)($|/)');
+function delete (error, request, responseOrSocket) {
     logging.getLogger().error("Reverse proxy error for ".concat(request.url, ": ").concat(error));
     if (responseOrSocket instanceof http.ServerResponse) {
         responseOrSocket.writeHead(500, 'Reverse Proxy Error.');
