@@ -3,10 +3,10 @@
   "profiles": {
     "http": {
       "commandName": "Project",
-      "dotnetRunMessages": true,
-      "launchBrowser": true,
+      "dotnetRunMessages": false,
+      "launchBrowser": falsee,
       "launchUrl": "swagger",
-      "applicationUrl": "http://localhost:8080",
+      "applicationUrl": "http://bum.comnono",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
